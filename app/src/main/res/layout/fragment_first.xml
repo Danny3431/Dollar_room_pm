@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Saldo -->
+    <TextView
+        android:id="@+id/tvBalance"
+        android:text="Saldo: 0 USD"
+        android:textSize="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Input monto -->
+    <EditText
+        android:id="@+id/amountEditText"
+        android:hint="Ingrsar un Monto en USD"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Botón comprar -->
+    <Button
+        android:id="@+id/buyButton"
+        android:text="Comprar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Botón vender -->
+    <Button
+        android:id="@+id/sellButton"
+        android:text="Vender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Historial -->
+    <TextView
+        android:id="@+id/tvHistorial"
+        android:text="Historial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactionRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
